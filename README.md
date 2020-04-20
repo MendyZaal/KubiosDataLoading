@@ -7,14 +7,14 @@ import the package and with the final function of the class you will be able to 
 kubios data-analysis in a dict. 
 
 ```python
-from KubiosDataloader import KubiosDataLoader
+from KubiosDataloader import KubiosDataLoading
 
-data_loader = KubiosDataLoader(kubios_data = "filename.txt") #insert file location of the kubios text file
-kubios_dict = KubiosDataLoader.kubios_data_extraction() # returns dictionary with data frames of every section in the kubios file
+data_loader = KubiosDataLoading(kubios_data = "filename.txt") #insert file location of the kubios text file
+kubios_dict = data_loader.kubios_data_extraction() # returns dictionary with data frames of every section in the kubios file
 ```
 ## To do 
 - Optimizing data frame sections besides the time-varying data frame
 - Write more tests 
 
-##License 
+## License 
 GNU GPLv3 

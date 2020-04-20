@@ -1,4 +1,6 @@
 from distutils.core import setup
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name='KubiosDataLoader',
@@ -6,6 +8,8 @@ setup(
     version='0.1',
     license='gpl-3.0',
     description='Importing text files from Kubios ECG data analysis',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Mendy Zaal',
     author_email='mendyzaal@hotmail.com',
     url='https://github.com/MendyZaal/KubiosDataLoading',
